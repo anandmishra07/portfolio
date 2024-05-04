@@ -5,12 +5,12 @@
 
 body {
   font-family: "Work Sans", sans-serif;
-  background-color: white;
-  color: #333;
+  background-color: #0f1929;
+  color: #faefef;
 }
 .mode-change {
-  background-color: #333;
-  color: rgb(255, 238, 254);
+  background-color: black;
+  color: white;
 }
 
 .icon {
@@ -22,7 +22,7 @@ body {
 nav {
   position: fixed;
   width: 100%;
-  background-color: #0f1929;
+  background: #2E3192;
   display: flex;
   padding: 8px 22px;
   justify-content: space-between;
@@ -59,7 +59,7 @@ ul li {
 li a {
   text-decoration: none;
   font-size: 24px;
-  font-weight: 900;
+  font-weight: 600;
   color: white;
   padding: 5px 22px;
 }
@@ -103,16 +103,16 @@ li a:hover {
 }
 .hire {
   font-size: 24px;
-  padding: 4px;
+  padding: 10px;
   color: #333;
   border-radius: 10px;
   cursor: pointer;
   border: 1px solid black;
-  margin: 20px 0px;
+  margin: 30px 0px;
 }
 .cv {
   font-size: 22px;
-  padding: 4px;
+  padding: 10px;
   color: #333;
   border-radius: 10px;
   cursor: pointer;
@@ -123,7 +123,7 @@ li a:hover {
 .second-container .logo i {
   font-size: 35px;
   padding: 14px;
-  color: rgb(37, 37, 158);
+  color: rgb(243, 243, 252);
   margin-top: 5px;
 }
 
@@ -144,6 +144,7 @@ li a:hover {
   width: 300px;
   height: 300px;
   margin: 140px 0px 0px 70px;
+  box-shadow: 1px 1px 4px  4px rgb(10, 10, 10);
 }
 
 @media only screen and (max-width: 990px) {
@@ -230,7 +231,7 @@ li a:hover {
 
   .icon {
     display: flex;
-    margin-right: 20px;
+    margin-right: 60px;
   }
 
   .showdata {
@@ -239,12 +240,11 @@ li a:hover {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 30px;
+    top: 38px;
     width: 100%;
-    color: rgb(241, 237, 237);
     text-align: center;
     gap: 15px;
-    background-color: #d42828;
+    background-color: #dde9e2;
   }
 
   .typing-carousel {
@@ -272,11 +272,16 @@ li a:hover {
     padding: 0px 0px;
   }
 
-  li:hover {
-    width: 100%;
-    background-color: white;
-    color: black;
+  li:hover{
+      background-color: #333;
+  color: rgb(253, 240, 240);
   }
+  
+  li a:hover {
+  width: 100%;
+  background-color: #333;
+  color: rgb(253, 240, 240);
+}
 
   .first_section {
     flex-direction: column;
@@ -335,6 +340,12 @@ li a:hover {
     padding: 5px 0px;
   }
 
+  .typing-carousel {
+    width: 100%;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 4px;
+  }
   .first_section {
     flex-direction: column;
     height: auto;
@@ -419,7 +430,12 @@ li a:hover {
   display: flex;
 }
 .photo img {
-  margin: 50px 50px 50px 0px;
+  border: 2px solid #333;
+  width: 220px;
+  height: 300px;
+  margin: 50px 50px 50px 40px;
+  border-radius: 10px;
+  
 }
 @media only screen and (max-width: 1050px) {
   .container_about h1 {
@@ -646,11 +662,11 @@ li a:hover {
   display: grid;
   align-content: center;
   grid-template-columns: auto auto auto;
-  gap: 20px;
+  gap: 40px;
 }
 
 .project {
-  border: 2px solid rgb(13, 243, 13);
+  border: 2px solid rgb(243, 247, 243);
   height: 200px;
   border-radius: 10px;
 }
@@ -673,10 +689,11 @@ li a:hover {
 }
 @media only screen and (max-width: 500px) {
   .name-project {
-    height: 1400px;
+    height: 1500px;
   }
   .container_project {
     grid-template-columns: auto;
+    margin: 60px;
   }
 }
 
@@ -695,7 +712,7 @@ li a:hover {
   display: flex;
   text-align: left;
   flex-direction: column;
-  border-right: 4px solid #24f009;
+  border-right: 4px solid #f4f8f3;
 }
 .container_contact .contact h1 {
   margin: 30px;
@@ -822,7 +839,7 @@ li a:hover {
 }
 .last_container .social_icon i {
   font-size: 30px;
-  color: rgb(44, 44, 141);
+  color: rgb(242, 242, 245);
   padding: 10px;
 }
 .last_container .menu {
@@ -835,7 +852,7 @@ li a:hover {
 }
 .last_container .menu li a {
   text-decoration: none;
-  color: rgb(99, 99, 240);
+  color: rgb(248, 248, 250);
 }
 .last_container p {
   display: flex;
