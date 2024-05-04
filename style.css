@@ -131,6 +131,12 @@ li a:hover {
   width: 29%;
 }
 
+.cr_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .image_container img {
   object-fit: cover;
   border-radius: 50%;
@@ -139,7 +145,8 @@ li a:hover {
   height: 300px;
   margin: 140px 0px 0px 70px;
 }
-@media only screen and (max-width: 1000px) {
+
+@media only screen and (max-width: 990px) {
   .first_section {
     display: flex;
     width: 99%;
@@ -208,7 +215,7 @@ li a:hover {
     object-position: center;
     width: 200px;
     height: 200px;
-    margin: 100px 0px 0px 60px;
+    margin: 80px 0px 0px 60px;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -236,8 +243,8 @@ li a:hover {
     width: 100%;
     color: rgb(241, 237, 237);
     text-align: center;
-    gap: 10px;
-    background-color: #333;
+    gap: 15px;
+    background-color: #d42828;
   }
 
   .typing-carousel {
@@ -289,23 +296,25 @@ li a:hover {
     width: 100%;
     height: 30%;
   }
-
+  .cr_1 {
+    display: flex;
+    justify-content: center;
+  }
   .image_container img {
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
     object-position: center;
-    width: 170px;
-    height: 170px;
-    margin: 32px 0px 0px 30%;
+    width: 140px;
+    height: 140px;
   }
 
   .discription_ {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     padding: 10px 0px;
     letter-spacing: 2px;
-    line-height: 10px;
+    line-height: 8px;
   }
   .discription_ p {
     width: 100%;
@@ -321,35 +330,13 @@ li a:hover {
 }
 
 @media only screen and (max-width: 500px) {
-
-
   ul li {
     width: 100%;
     padding: 5px 0px;
   }
 
-  li a {
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: 900;
-    color: rgb(19, 18, 18);
-    padding: 0px 0px;
-  }
-
-  li:hover {
-    width: 100%;
-    background-color: white;
-    color: black;
-  }
-
   .first_section {
     flex-direction: column;
-    height: auto;
-  }
-
-  .first_section .main_container {
-    padding: 20px;
-    width: auto;
     height: auto;
   }
 
@@ -363,9 +350,8 @@ li a:hover {
     object-fit: cover;
     border-radius: 50%;
     object-position: center;
-    width: 180px;
-    height: 180px;
-    margin: 45px 0px 20px 150px;
+    width: 110px;
+    height: 110px;
   }
 
   .discription_ {
@@ -407,9 +393,9 @@ li a:hover {
 .container_about .first_about .text_about .text {
   height: 52%;
 }
-.container_about .first_about .text_about .text p{
+.container_about .first_about .text_about .text p {
   font-size: 18px;
-  line-height: 22px;
+  line-height: 18px;
   text-align: justify;
   width: 100%;
 }
@@ -435,6 +421,46 @@ li a:hover {
 .photo img {
   margin: 50px 50px 50px 0px;
 }
+@media only screen and (max-width: 1050px) {
+  .container_about h1 {
+    text-align: center;
+    font-size: 43px;
+    margin-top: 40px;
+  }
+  .container_about .first_about {
+    display: flex;
+    height: 87%;
+  }
+  .container_about .first_about .text_about {
+    width: 70%;
+    font-size: 16px;
+    margin: 50px;
+  }
+  .container_about .first_about .text_about .text {
+    height: 64%;
+  }
+  .container_about .first_about .text_about .text p {
+    font-size: 15px;
+    line-height: 16px;
+    text-align: justify;
+    width: 100%;
+  }
+  #education {
+    height: 35%;
+    padding: 8px 5px;
+  }
+  #education h2 {
+    height: 0px;
+    padding-bottom: 30px;
+  }
+  .container_about .first_about .text_about p {
+    padding: 2px;
+  }
+  #education h2 {
+    text-align: center;
+    font-size: 28px;
+  }
+}
 
 @media only screen and (max-width: 700px) {
   .container_about {
@@ -459,7 +485,7 @@ li a:hover {
   .container_about .first_about .text_about .text {
     height: 100%;
   }
-  .container_about .first_about .text_about .text p{
+  .container_about .first_about .text_about .text p {
     font-size: 14px;
     line-height: 22px;
     text-align: justify;
@@ -473,6 +499,13 @@ li a:hover {
   }
   .photo img {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .container_about {
+    height: 750px;
+    padding: 1%;
   }
 }
 /* Skills */
@@ -501,11 +534,6 @@ li a:hover {
   height: 80%;
   padding-left: 15px;
 }
-
-.left_bar {
-  border-right: 1px solid red;
-}
-
 .left_bar p,
 .right_bar p {
   font-size: 20px;
@@ -515,6 +543,8 @@ li a:hover {
 .container {
   width: 90%;
   background-color: rgb(200, 200, 238);
+  border: 1px solid rgb(219, 110, 110);
+  border-radius: 8px;
 }
 
 .skills {
@@ -522,6 +552,8 @@ li a:hover {
   padding-top: 3px;
   padding-bottom: 3px;
   color: white;
+  border: 1px solid rgb(219, 110, 110);
+  border-radius: 8px;
 }
 
 .skill-bar {
@@ -565,12 +597,12 @@ li a:hover {
   background-color: #0bf5fd;
 }
 
-/* Media Queries */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 700px) {
+  .container_skills {
+    height: 650px;
+  }
   .center_container {
     flex-direction: column;
-    height: auto;
-    margin-top: 70px;
   }
 
   .left_bar,
@@ -599,13 +631,15 @@ li a:hover {
 /* project */
 
 .name-project {
-  padding: 8%;
+  padding: 4%;
   height: 420px;
+  margin-bottom: 50px;
 }
 
 .name-project h1 {
   text-align: center;
   font-size: 50px;
+  margin-bottom: 50px;
 }
 
 .container_project {
@@ -616,8 +650,8 @@ li a:hover {
 }
 
 .project {
+  border: 2px solid rgb(13, 243, 13);
   height: 200px;
-  border: 3px solid rgb(48, 6, 240);
   border-radius: 10px;
 }
 
@@ -630,18 +664,19 @@ li a:hover {
 
 /* Media Queries */
 @media only screen and (max-width: 700px) {
+  .name-project {
+    height: 750px;
+  }
   .container_project {
     grid-template-columns: auto auto;
-    height: 150vh;
   }
 }
-
 @media only screen and (max-width: 500px) {
+  .name-project {
+    height: 1400px;
+  }
   .container_project {
     grid-template-columns: auto;
-    padding: 5%;
-         height: 200vh;
-         margin-top: 150px;
   }
 }
 
@@ -660,7 +695,7 @@ li a:hover {
   display: flex;
   text-align: left;
   flex-direction: column;
-  border-right: 1px solid #ee0d0d;
+  border-right: 4px solid #24f009;
 }
 .container_contact .contact h1 {
   margin: 30px;
@@ -715,11 +750,20 @@ li a:hover {
   display: none;
 }
 @media only screen and (max-width: 700px) {
+
+  .feedback-input-x {
+    width: 70%;
+  }
+  .feedback-input {
+    width: 70%;
+  }
+  .feedback-input-Z {
+    width: 35%;
+  }
   .container_contact {
     display: block;
     padding: 5%;
-    height: auto;
-    margin-top: 60%;
+    height: 600px;
   }
 
   .contact-3 h1 {
@@ -739,10 +783,24 @@ li a:hover {
 }
 
 @media only screen and (max-width: 500px) {
+  .feedback-input-x {
+    width: 70%;
+  }
+  .feedback-input {
+    width: 70%;
+  }
+  .feedback-input-Z {
+    width: 35%;
+  }
+
+  .container_contact .message {
+    border: 2px solid red;
+    margin-left: 20px;
+    width: 50%;
+    padding: 20px;
+  }
   .container_contact {
     display: block;
-    height: 100vh;
-    margin-top: 190vh;
   }
 
   .contact-3 h1 {
@@ -755,7 +813,7 @@ li a:hover {
   }
   .container_contact .message {
     width: 100%;
-    padding: 10px;
+    padding: 0px;
   }
 }
 
@@ -766,7 +824,7 @@ li a:hover {
 .last_container .social_icon i {
   font-size: 30px;
   color: rgb(44, 44, 141);
-  padding: 15px;
+  padding: 10px;
 }
 .last_container .menu {
   display: flex;
@@ -785,4 +843,34 @@ li a:hover {
   padding: 15px;
   font-size: 14px;
   justify-content: center;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 700px) {
+  .last_container .social_icon {
+    display: flex;
+    justify-content: center;
+  }
+  .last_container .social_icon i {
+    font-size: 30px;
+    color: rgb(44, 44, 141);
+    padding: 10px;
+  }
+
+  .last_container .menu li {
+    padding: 8px;
+  }
+  .last_container p {
+    display: flex;
+    padding: 4px;
+    font-size: 12px;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .last_container .menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 }
