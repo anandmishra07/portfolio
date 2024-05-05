@@ -385,10 +385,9 @@ li a:hover {
 
   .typing-carousel {
     width: 100%;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
-    letter-spacing: 5px;
-    border: 2px solid red;
+    letter-spacing: 4px;
   }
 }
 @media only screen and (max-width: 390px) {
@@ -870,7 +869,7 @@ li a:hover {
 }
 .last_container .social_icon i {
   font-size: 30px;
-  color: #003cff;
+  color: rgb(36, 2, 185);
   padding: 10px;
 }
 .last_container .menu {
@@ -883,7 +882,7 @@ li a:hover {
 }
 .last_container .menu li a {
   text-decoration: none;
-  color: rgb(10, 10, 10);
+  color: rgb(76, 175, 150);
 }
 .last_container p {
   display: flex;
